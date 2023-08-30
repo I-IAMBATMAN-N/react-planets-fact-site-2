@@ -38,9 +38,9 @@ export default function PlanetContainer({ currPlanet }) {
     return (
       <article className="planet-info">
         <div className="planet-info--container">
-          <heading className="planet-info--heading">
+          <header className="planet-info--heading">
             <h1 className="heading-primary">{currPlanet.name}</h1>
-          </heading>
+          </header>
           <section className="planet-info--section">
             {/* ---------------------------- COMPONENTS ---------------------------- */}
             <PlanetInfoText />
