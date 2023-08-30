@@ -1,4 +1,5 @@
 import { useState } from "react";
+
 export default function Header({ planetData, currPlanet, setCurrPlanet }) {
   const [activeNav, setActiveNav] = useState("");
   function handleActiveNav() {
