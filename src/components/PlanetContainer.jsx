@@ -8,6 +8,33 @@ export default function PlanetContainer({ currPlanet }) {
     setNavState(state);
   }
 
+  function setWidth(planet) {
+    //
+    const radius = planet.radius.slice(0, -2).replace(",", "");
+
+    if (radius < 5000) {
+      //
+      return {
+        width: "40%",
+      };
+    } else if (radius < 10000) {
+      //
+      return {
+        width: "55%",
+      };
+    } else if (radius > 30000) {
+      //
+      return {
+        width: "70%",
+      };
+    } else if (radius > 70000) {
+      //
+      return {
+        width: "85%",
+      };
+    }
+  }
+
   return (
     <div className="planet-container">
       <PlanetAside />
@@ -24,7 +51,7 @@ export default function PlanetContainer({ currPlanet }) {
               ? currPlanet.images.internal
               : currPlanet.images.planet
           }
-          alt=""
+          style={setWidth(currPlanet)}
         />
         <img
           src={navState === "geology" ? currPlanet.images.geology : ""}
