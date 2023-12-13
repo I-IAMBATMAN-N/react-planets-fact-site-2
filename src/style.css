@@ -81,7 +81,7 @@ Background
 }
 * {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
@@ -157,11 +157,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   gap: 4.4rem;
 
   max-width: 1440px;
@@ -191,8 +191,8 @@ body {
 
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 3.2rem;
 }
 .main-nav--item {
@@ -229,14 +229,14 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   gap: 6.4rem;
 }
 .planet-container {
@@ -244,11 +244,11 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 100%;
 
   min-height: 575px;
@@ -259,20 +259,20 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 
   -webkit-box-flex: 1;
 
-      -ms-flex: 1 0 0px;
+  -ms-flex: 1 0 0px;
 
-          flex: 1 0 0;
+  flex: 1 0 0;
   height: 100%;
 
   position: relative;
@@ -287,9 +287,9 @@ body {
 
   -webkit-transform: translate(-50%, -50%);
 
-      -ms-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
 
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 .img-container img:not(:first-child) {
   display: none;
@@ -299,14 +299,14 @@ body {
 
   -webkit-transform: translateY(82%);
 
-      -ms-transform: translateY(82%);
+  -ms-transform: translateY(82%);
 
-          transform: translateY(82%);
+  transform: translateY(82%);
 }
 .planet-info {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 30%;
-          flex: 0 0 30%;
+  -ms-flex: 0 0 30%;
+  flex: 0 0 30%;
 
   display: -webkit-box;
 
@@ -315,17 +315,17 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   gap: 4.8rem;
 }
 .planet-info--container {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 0px;
-          flex: 1 0 0;
+  -ms-flex: 1 0 0px;
+  flex: 1 0 0;
 
   display: -webkit-box;
 
@@ -334,11 +334,11 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   gap: 3.2rem;
 }
 .planet-info--heading {
@@ -350,8 +350,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   gap: 2.4rem;
 }
 .planet-info--link {
@@ -359,8 +359,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   gap: 0.8rem;
   color: var(--color-border);
 }
@@ -387,8 +387,8 @@ body {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   gap: 1.6rem;
 }
 .secondary-nav--item {
@@ -453,19 +453,19 @@ body {
 
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   gap: 3.2rem;
 
   width: 100%;
 }
 .planet-parameters--parameter {
   -webkit-box-flex: 1;
-      -ms-flex: 1 0 0px;
-          flex: 1 0 0;
+  -ms-flex: 1 0 0px;
+  flex: 1 0 0;
   padding: 1.6rem;
   padding-bottom: 3.2rem;
 
@@ -483,8 +483,8 @@ body {
   .main-header .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .section {
     min-height: 100vh;
@@ -492,27 +492,27 @@ body {
   }
   .planet-container {
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 0px;
-            flex: 1 0 0;
+    -ms-flex: 1 0 0px;
+    flex: 1 0 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     gap: 12rem;
   }
   .planet-info {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
   }
   .planet-info--container {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 40%;
-            flex: 0 0 40%;
+    -ms-flex: 0 0 40%;
+    flex: 0 0 40%;
   }
   .secondary-nav--item {
     padding: 1.6rem;
@@ -531,8 +531,8 @@ body {
   .main-header .container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
   .main-nav {
     position: absolute;
@@ -553,9 +553,9 @@ body {
 
     -webkit-transform: translateX(-100%);
 
-        -ms-transform: translateX(-100%);
+    -ms-transform: translateX(-100%);
 
-            transform: translateX(-100%);
+    transform: translateX(-100%);
     -webkit-transition: -webkit-transform 0.3s ease;
     transition: -webkit-transform 0.3s ease;
     -o-transition: transform 0.3s ease;
@@ -564,25 +564,25 @@ body {
   }
   .main-nav.active {
     -webkit-transform: translateX(0%);
-        -ms-transform: translateX(0%);
-            transform: translateX(0%);
+    -ms-transform: translateX(0%);
+    transform: translateX(0%);
   }
   .main-nav .main-nav--list {
     height: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
     gap: 0;
   }
   .main-nav .main-nav--item {
     width: 100%;
     -webkit-box-flex: 1;
-        -ms-flex: 1 0 0px;
-            flex: 1 0 0;
+    -ms-flex: 1 0 0px;
+    flex: 1 0 0;
 
     display: -webkit-box;
 
@@ -590,8 +590,8 @@ body {
 
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     gap: 4.8rem;
   }
   .main-nav .main-nav--item .heading-quaternary {
@@ -647,18 +647,18 @@ body {
   .img-container {
     width: 100%;
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 350px;
-            flex: 0 0 350px;
+    -ms-flex: 0 0 350px;
+    flex: 0 0 350px;
   }
   .planet-info--container {
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
-            flex: 0 0 100%;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
   }
   .planet-info--section {
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     text-align: center;
   }
   .secondary-nav {
@@ -674,14 +674,14 @@ body {
   .secondary-nav--list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
 
     -webkit-box-pack: space-evenly;
 
-        -ms-flex-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
 
-            justify-content: space-evenly;
+    justify-content: space-evenly;
   }
   .secondary-nav--item {
     border: none;
@@ -692,11 +692,11 @@ body {
 
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
   .secondary-nav--item.mercury.active,
   .secondary-nav--item.venus.active,
@@ -710,35 +710,35 @@ body {
   }
   .secondary-nav--item.mercury.active {
     -webkit-box-shadow: inset 0px -0.4rem 0rem 0rem var(--color-mercury);
-            box-shadow: inset 0px -0.4rem 0rem 0rem var(--color-mercury);
+    box-shadow: inset 0px -0.4rem 0rem 0rem var(--color-mercury);
   }
   .secondary-nav--item.venus.active {
     -webkit-box-shadow: inset 0px -0.4rem 0rem 0rem var(--color-venus);
-            box-shadow: inset 0px -0.4rem 0rem 0rem var(--color-venus);
+    box-shadow: inset 0px -0.4rem 0rem 0rem var(--color-venus);
   }
   .secondary-nav--item.earth.active {
     -webkit-box-shadow: inset 0px -0.4rem 0rem 0rem var(--color-earth);
-            box-shadow: inset 0px -0.4rem 0rem 0rem var(--color-earth);
+    box-shadow: inset 0px -0.4rem 0rem 0rem var(--color-earth);
   }
   .secondary-nav--item.mars.active {
     -webkit-box-shadow: inset 0px -0.4rem 0rem 0rem var(--color-mars);
-            box-shadow: inset 0px -0.4rem 0rem 0rem var(--color-mars);
+    box-shadow: inset 0px -0.4rem 0rem 0rem var(--color-mars);
   }
   .secondary-nav--item.jupiter.active {
     -webkit-box-shadow: inset 0px -0.4rem 0rem 0rem var(--color-jupiter);
-            box-shadow: inset 0px -0.4rem 0rem 0rem var(--color-jupiter);
+    box-shadow: inset 0px -0.4rem 0rem 0rem var(--color-jupiter);
   }
   .secondary-nav--item.saturn.active {
     -webkit-box-shadow: inset 0px -0.4rem 0rem 0rem var(--color-saturn);
-            box-shadow: inset 0px -0.4rem 0rem 0rem var(--color-saturn);
+    box-shadow: inset 0px -0.4rem 0rem 0rem var(--color-saturn);
   }
   .secondary-nav--item.uranus.active {
     -webkit-box-shadow: inset 0px -0.4rem 0rem 0rem var(--color-uranus);
-            box-shadow: inset 0px -0.4rem 0rem 0rem var(--color-uranus);
+    box-shadow: inset 0px -0.4rem 0rem 0rem var(--color-uranus);
   }
   .secondary-nav--item.neptune.active {
     -webkit-box-shadow: inset 0px -0.4rem 0rem 0rem var(--color-neptune);
-            box-shadow: inset 0px -0.4rem 0rem 0rem var(--color-neptune);
+    box-shadow: inset 0px -0.4rem 0rem 0rem var(--color-neptune);
   }
   .secondary-nav--item .heading-tertiary span {
     display: none;
@@ -746,8 +746,8 @@ body {
   .planet-parameters {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     gap: 2.4rem;
   }
   .planet-parameters--parameter {
@@ -759,15 +759,15 @@ body {
 
     display: flex;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
 
     padding-bottom: 0;
     padding: 1.6rem;

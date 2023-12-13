@@ -54,17 +54,19 @@ export default function Header({ planetData, currPlanet, setCurrPlanet }) {
     }
   }
   function NavButton() {
-    <button className="main-nav--btn" onClick={handleActiveNav}>
-      <svg
-        className="main-nav--btn"
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="17"
-      >
-        <g fill="#FFF" fillRule="evenodd">
-          <path d="M0 0h24v3H0zM0 7h24v3H0zM0 14h24v3H0z" />
-        </g>
-      </svg>
-    </button>;
+    return (
+      <a href="#" class="main-nav--btn" onClick={() => handleActiveNav()}>
+        <svg
+          class="main-nav--btn"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="17"
+        >
+          <g fill="#FFF" fill-rule="evenodd">
+            <path d="M0 0h24v3H0zM0 7h24v3H0zM0 14h24v3H0z" />
+          </g>
+        </svg>
+      </a>
+    );
   }
 }
