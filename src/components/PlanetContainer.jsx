@@ -89,43 +89,22 @@ export default function PlanetContainer({ currPlanet }) {
       );
     }
     function PlanetInfoLink() {
+      function getSource() {
+        let source;
+
+        if (navState === "overview") source = currPlanet.overview.source;
+        if (navState === "structure") source = currPlanet.structure.source;
+        if (navState === "geology") source = currPlanet.geology.source;
+
+        return source;
+      }
       return (
         <p className="planet-info--link">
           <span>Source</span>:
-          {navState === "overview" ? (
-            <a
-              href={currPlanet.overview.source}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Wikipedia
-            </a>
-          ) : (
-            <></>
-          )}
-          {navState === "structure" ? (
-            <a
-              href={currPlanet.structure.source}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Wikipedia
-            </a>
-          ) : (
-            <></>
-          )}
-          {navState === "geology" ? (
-            <a
-              href={currPlanet.geology.source}
-              target="_blank"
-              rel="noreferrer"
-            >
-              Wikipedia
-            </a>
-          ) : (
-            <></>
-          )}
-          <img src={sourceIcon} alt="source icon" className="icon-source" />
+          <a href={getSource()} target="_blank" rel="noreferrer">
+            Wikipedia
+            <img src={sourceIcon} alt="source icon" className="icon-source" />
+          </a>
         </p>
       );
     }
