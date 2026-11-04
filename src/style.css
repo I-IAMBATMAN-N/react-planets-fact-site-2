@@ -1,7 +1,7 @@
 /*
 * Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
+* PostCSS: v8.5.15,
+* Autoprefixer: v10.5.0
 * Browsers: last 4 version
 */
 
@@ -277,7 +277,7 @@ body {
 
   position: relative;
 }
-.img-container img:first-child {
+.img-container img:not(:last-child ){
   display: block;
   width: 29rem;
 
@@ -291,7 +291,7 @@ body {
 
   transform: translate(-50%, -50%);
 }
-.img-container img:not(:first-child) {
+.img-container img:last-child {
   display: none;
 
   width: 16.3rem;
@@ -564,7 +564,6 @@ body {
     transform: translateX(-100%);
     -webkit-transition: -webkit-transform 0.3s ease;
     transition: -webkit-transform 0.3s ease;
-    -o-transition: transform 0.3s ease;
     transition: transform 0.3s ease;
     transition: transform 0.3s ease, -webkit-transform 0.3s ease;
   }

@@ -2,37 +2,18 @@ import sourceIcon from "../assets/icon-source.svg";
 import { useState } from "react";
 
 export default function PlanetContainer({ currPlanet }) {
-  const [navState, setNavState] = useState("overview");
+  const [navState, setNavState] = useState(["overview"]);
   // console.log("Planet.jsx", currPlanet);
   function handleState(state) {
-    setNavState(state);
+    setNavState((s) => [...s, state]);
   }
 
   function setWidth(planet) {
-    //
     const radius = planet.radius.slice(0, -2).replace(",", "");
-
-    if (radius < 5000) {
-      //
-      return {
-        width: "40%",
-      };
-    } else if (radius < 10000) {
-      //
-      return {
-        width: "55%",
-      };
-    } else if (radius > 30000) {
-      //
-      return {
-        width: "70%",
-      };
-    } else if (radius > 70000) {
-      //
-      return {
-        width: "85%",
-      };
-    }
+    if (radius < 5000) return "40%";
+    if (radius < 10000) return "55%";
+    if (radius > 30000) return "70%"; 
+    if (radius > 70000) return "85%";
   }
 
   return (
@@ -46,17 +27,19 @@ export default function PlanetContainer({ currPlanet }) {
     return (
       <aside className="img-container">
         <img
-          src={
-            navState === "structure"
-              ? currPlanet.images.internal
-              : currPlanet.images.planet
-          }
-          style={setWidth(currPlanet)}
+          src={currPlanet.images.planet}
+          alt="Planet Overview"
+          style={{width: `${setWidth(currPlanet)}`, display: `${(navState.at(-1) === "overview" || (navState.at(-2) === "overview" && navState.at(-1) === "geology")) ? "inline-block" : "none"}`}}
         />
         <img
-          src={navState === "geology" ? currPlanet.images.geology : ""}
-          alt=""
-          style={{ display: `${navState === "geology" ? "block" : "none"}` }}
+          src={currPlanet.images.internal}
+          alt="Planet Structure"
+          style={{width: `${setWidth(currPlanet)}`, display: `${navState.at(-1) === "structure" || (navState.at(-2) === "structure" && navState.at(-1) === "geology")? "inline-block" : "none"}`}}
+        />
+        <img
+          src={navState.at(-1) === "geology" ? currPlanet.images.geology : ""}
+          alt="Planet Geology"
+          style={{ display: `${navState.at(-1) === "geology" ? "inline-block" : "none"}` }}
         />
       </aside>
     );
@@ -82,9 +65,9 @@ export default function PlanetContainer({ currPlanet }) {
     function PlanetInfoText() {
       return (
         <p className="planet-info--text">
-          {navState === "overview" ? currPlanet.overview.content : <></>}
-          {navState === "structure" ? currPlanet.structure.content : <></>}
-          {navState === "geology" ? currPlanet.geology.content : <></>}
+          {navState.at(-1) === "overview" ? currPlanet.overview.content : <></>}
+          {navState.at(-1) === "structure" ? currPlanet.structure.content : <></>}
+          {navState.at(-1) === "geology" ? currPlanet.geology.content : <></>}
         </p>
       );
     }
@@ -92,9 +75,9 @@ export default function PlanetContainer({ currPlanet }) {
       function getSource() {
         let source;
 
-        if (navState === "overview") source = currPlanet.overview.source;
-        if (navState === "structure") source = currPlanet.structure.source;
-        if (navState === "geology") source = currPlanet.geology.source;
+        if (navState.at(-1) === "overview") source = currPlanet.overview.source;
+        if (navState.at(-1) === "structure") source = currPlanet.structure.source;
+        if (navState.at(-1) === "geology") source = currPlanet.geology.source;
 
         return source;
       }
@@ -128,7 +111,7 @@ export default function PlanetContainer({ currPlanet }) {
           <li
             key={Math.random()}
             className={`secondary-nav--item ${currPlanet.name.toLowerCase()} ${
-              navState === `${data.b.toLowerCase()}` ? "active" : ""
+              navState.at(-1) === `${data.b.toLowerCase()}` ? "active" : ""
             }`}
             onClick={() => handleState(data.b.toLowerCase())}
           >
