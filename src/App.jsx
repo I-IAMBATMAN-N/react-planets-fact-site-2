@@ -1,41 +1,41 @@
-import imgMercury from "./assets/planet-mercury.svg";
-import imgMercuryInternal from "./assets/planet-mercury-internal.svg";
-import imgMercuryGeology from "./assets/geology-mercury.png";
+import imgMercury from "/assets/planet-mercury.svg";
+import imgMercuryInternal from "/assets/planet-mercury-internal.svg";
+import imgMercuryGeology from "/assets/geology-mercury.png";
 //
-import imgVenus from "./assets/planet-venus.svg";
-import imgVenusInternal from "./assets/planet-venus-internal.svg";
-import imgVenusGeology from "./assets/geology-venus.png";
+import imgVenus from "/assets/planet-venus.svg";
+import imgVenusInternal from "/assets/planet-venus-internal.svg";
+import imgVenusGeology from "/assets/geology-venus.png";
 //
-import imgEarth from "./assets/planet-earth.svg";
-import imgEarthInternal from "./assets/planet-earth-internal.svg";
-import imgEarthGeology from "./assets/geology-earth.png";
+import imgEarth from "/assets/planet-earth.svg";
+import imgEarthInternal from "/assets/planet-earth-internal.svg";
+import imgEarthGeology from "/assets/geology-earth.png";
 //
-import imgMars from "./assets/planet-mars.svg";
-import imgMarsInternal from "./assets/planet-mars-internal.svg";
-import imgMarsGeology from "./assets/geology-mars.png";
+import imgMars from "/assets/planet-mars.svg";
+import imgMarsInternal from "/assets/planet-mars-internal.svg";
+import imgMarsGeology from "/assets/geology-mars.png";
 //
-import imgJupiter from "./assets/planet-jupiter.svg";
-import imgJupiterInternal from "./assets/planet-jupiter-internal.svg";
-import imgJupiterGeology from "./assets/geology-jupiter.png";
+import imgJupiter from "/assets/planet-jupiter.svg";
+import imgJupiterInternal from "/assets/planet-jupiter-internal.svg";
+import imgJupiterGeology from "/assets/geology-jupiter.png";
 //
-import imgSaturn from "./assets/planet-saturn.svg";
-import imgSaturnInternal from "./assets/planet-saturn-internal.svg";
-import imgSatrunGeology from "./assets/geology-saturn.png";
+import imgSaturn from "/assets/planet-saturn.svg";
+import imgSaturnInternal from "/assets/planet-saturn-internal.svg";
+import imgSatrunGeology from "/assets/geology-saturn.png";
 //
-import imgUranus from "./assets/planet-uranus.svg";
-import imgUranusInternal from "./assets/planet-uranus-internal.svg";
-import imgUranusGeology from "./assets/geology-uranus.png";
+import imgUranus from "/assets/planet-uranus.svg";
+import imgUranusInternal from "/assets/planet-uranus-internal.svg";
+import imgUranusGeology from "/assets/geology-uranus.png";
 //
-import imgNeptune from "./assets/planet-neptune.svg";
-import imgNeptuneInternal from "./assets/planet-neptune-internal.svg";
-import imgNeptuneGeology from "./assets/geology-neptune.png";
+import imgNeptune from "/assets/planet-neptune.svg";
+import imgNeptuneInternal from "/assets/planet-neptune-internal.svg";
+import imgNeptuneGeology from "/assets/geology-neptune.png";
 
 import { useState } from "react";
 
 // components
-import Header from "./components/Header";
-import PlanetContainer from "./components/PlanetContainer";
-import PlanetFooter from "./components/PlanetFooter";
+import Header from "/components/Header";
+import PlanetContainer from "/components/PlanetContainer";
+import PlanetFooter from "/components/PlanetFooter";
 
 function App() {
   const planetData = [
