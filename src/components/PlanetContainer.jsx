@@ -37,7 +37,7 @@ export default function PlanetContainer({ currPlanet }) {
           style={{width: `${setWidth(currPlanet)}`, display: `${navState.at(-1) === "structure" || (navState.at(-2) === "structure" && navState.at(-1) === "geology")? "inline-block" : "none"}`}}
         />
         <img
-          src={navState.at(-1) === "geology" ? currPlanet.images.geology : ""}
+          src={currPlanet.images.geology}
           alt="Planet Geology"
           style={{ display: `${navState.at(-1) === "geology" ? "inline-block" : "none"}` }}
         />
